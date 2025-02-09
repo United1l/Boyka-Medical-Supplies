@@ -1,7 +1,9 @@
 const Button = ({className, children}) => {
     const renderButton = () => (
         <button className={className}>
-            <span>{children}</span>
+            <span className="w-full">
+                {children}
+            </span>
         </button>
     )
 
