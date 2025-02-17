@@ -1,6 +1,6 @@
-const Button = ({className, children}) => {
+const Button = ({className, children, onClick}) => {
     const renderButton = () => (
-        <button className={className}>
+        <button className={`${className} rounded-tr-xl`} onClick={onClick}>
             <span className="w-full">
                 {children}
             </span>
