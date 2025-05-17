@@ -12,8 +12,19 @@ const Header = () => {
     setMenuState(prevState => !prevState)
   )
 
+  const links = [
+    { label: "STORE", href: "#"},
+    { label: "ABOUT", href: "#" },
+    { label: "NEW ACCOUNT", href: "#" },
+    { label: "SIGN IN", href: "#" },
+  ];
+
+  const renderedLinks = links.slice(0, 2).map((link, i) => (
+    <a key={i} href={link.href}>{link.label}</a>
+  ));
+
   return (
-    <div className="fixed top-0 h-[4rem] w-full bg-[#4CA771] flex 
+    <header className="fixed top-0 h-[4rem] w-full bg-[#4CA771] flex 
      items-center justify-between text-[#C0E6BA] z-10">
       <img src={logo} width={50} height={50} alt="TrustCare MS logo" className="ml-2" />
 
@@ -24,32 +35,28 @@ const Header = () => {
 
       <nav className="hidden w-2/3 md:flex items-center relative">
         <div className="text-xs flex justify-between items-center h-auto min-w-2/5 mr-auto">
-          <a className="">STORE</a>
-          <a className="">ABOUT</a>
+          {renderedLinks}
         </div>
 
-        <div className="text-xs  flex justify-between items-center h-auto w-[13rem] fixed right-2">
-          <a className="">
+        <div className="text-xs  flex justify-between items-center h-auto w-[13rem] ml-auto">
+          <Button className="">
             NEW ACCOUNT
-          </a>
+          </Button>
           <Button className="w-[5rem] p-2 border-2 border-[#C0E6BA] cursor-pointer
           hover:bg-[#C0E6BA] hover:text-[#013237] mr-2">
             SIGN IN
           </Button>
         </div>
       </nav>
-      <div className={`${menuState? "flex" : "hidden"} md:hidden absolute w-full h-[40rem] bg-[#4CA771] top-20 p-6
-        flex-col justify-evenly items-center`}>
-        <a className="">STORE</a>
-        <a className="">ABOUT</a>
-        <a className="">
-            NEW ACCOUNT
-        </a>
-        <a className="">
-            SIGN IN
-        </a>
+      <div className={`${menuState? "flex" : "hidden"} md:hidden absolute w-full min-h-[40rem] bg-[#4CA771] top-20 p-6
+        flex-col items-center`}>
+        {links.map((link, index) => (
+          <a key={index} href={link.href} className="mt-12">
+            {link.label}
+          </a>
+        ))}
       </div>
-    </div>
+    </header>
   )
 }
 
