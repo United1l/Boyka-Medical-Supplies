@@ -15,20 +15,20 @@ const Header = () => {
   return (
     <div className="fixed top-0 h-[4rem] w-full bg-[#4CA771] flex 
      items-center justify-between text-[#C0E6BA] z-10">
-      <img src={logo} width={50} height={50} alt="TrustCare MS" className="ml-2" />
+      <img src={logo} width={50} height={50} alt="TrustCare MS logo" className="ml-2" />
 
       <Button className="w-[3rem] flex items-center justify-center p-2 border-2 border-[#C0E6BA]
        cursor-pointer md:hidden mr-2" onClick={handleClick}>
         <FontAwesomeIcon icon={menuState?faClose:faBars} />
       </Button>
 
-      <nav className="hidden w-2/3 md:flex lg:flex items-center justify-center relative">
-        <div className="text-xs flex justify-between items-center h-full md:w-[10rem] lg:w-[13rem] fixed right-[50%]">
+      <nav className="hidden w-2/3 md:flex items-center relative">
+        <div className="text-xs flex justify-between items-center h-auto min-w-2/5 mr-auto">
           <a className="">STORE</a>
           <a className="">ABOUT</a>
         </div>
 
-        <div className="text-xs  flex justify-between items-center h-full w-[13rem] fixed right-2">
+        <div className="text-xs  flex justify-between items-center h-auto w-[13rem] fixed right-2">
           <a className="">
             NEW ACCOUNT
           </a>
