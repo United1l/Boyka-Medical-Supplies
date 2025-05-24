@@ -1,11 +1,11 @@
 import Header from './components/Header'
-import Button from './components/Button'
+import Hero from './components/Hero'
 
 function App() {
 
   return (
     <>
-      <Header></Header>
+      <Header />
     </>  
   )
 }

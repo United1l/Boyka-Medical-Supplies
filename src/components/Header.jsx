@@ -39,7 +39,7 @@ const Header = () => {
         </div>
 
         <div className="text-xs  flex justify-between items-center h-auto w-[13rem] ml-auto">
-          <Button className="">
+          <Button className="hover:text-[#013237] cursor-pointer">
             NEW ACCOUNT
           </Button>
           <Button className="w-[5rem] p-2 border-2 border-[#C0E6BA] cursor-pointer
