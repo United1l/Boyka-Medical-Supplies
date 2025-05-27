@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-body {
-    background-color: #edeec9;
-}
-
 a:hover {
     color: #013237;
     cursor: pointer;
