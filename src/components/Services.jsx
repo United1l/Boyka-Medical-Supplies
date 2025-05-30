@@ -25,8 +25,13 @@ const Services = () => {
     ));
 
     return (
-        <div className="services h-2/5 w-full mt-24 flex flex-wrap items-center justify-evenly">
-            {renderedServices}
+        <div className="h-2/5 w-full mt-32 md:mt-10 flex flex-col items-center justify-center">
+            <h1 className="text-4xl text-[#4CA771] font-bold">
+                Our Services
+            </h1>
+            <div className="services h-4/5 w-full mt-8 flex flex-wrap items-center justify-evenly">
+                {renderedServices}
+            </div>
         </div>
     )
 }

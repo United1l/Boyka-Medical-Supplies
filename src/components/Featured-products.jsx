@@ -19,7 +19,7 @@ const FeauturedProducts = () => {
     return (
         <div className="featured-products h-2/5 w-full mt-24 flex flex-col items-center
             justify-evenly">
-            <h2 className="text-3xl text-center text-[#4CA771] font-normal p-8">
+            <h2 className="text-4xl text-center text-[#4CA771] font-bold p-8">
                 Featured Products
             </h2>
             <div className="featured-products-images-container h-3/5 w-[95%] flex flex-wrap justify-center 
