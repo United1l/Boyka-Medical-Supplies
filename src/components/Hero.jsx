@@ -12,7 +12,7 @@ const Hero = () => {
                     Committed to providing you with the best medical supplies and equipment.
                 </p>
             </div>
-            <img src={hero} alt="Hero-image" className="h-[90%] w-[80%] md:h-[80%] rounded-lg" />
+            <img src={hero} alt="Hero-image" className="h-[90%] w-[80%] md:h-[80%] rounded-lg border-2 border-[#4CA771]" />
         </section>
     )
 }
