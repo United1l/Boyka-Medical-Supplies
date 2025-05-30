@@ -10,7 +10,7 @@ const FeauturedProducts = () => {
     ];
     
     const renderedImages = images.map((image, index) => (
-        <div key={index} className="featured-container w-[30%] h-4/5 flex justify-center items-center
+        <div key={index} className="featured-container w-[30%] h-3/5 flex justify-center items-center
             bg-[#4CA771] mr-4 mt-4 rounded-tr-3xl">
             <img src={image.img} alt={image.alt} className="w-3/4 h-3/4 object-cover" />
         </div>
@@ -22,7 +22,8 @@ const FeauturedProducts = () => {
             <h2 className="text-3xl text-center text-[#4CA771] font-normal p-8">
                 Featured Products
             </h2>
-            <div className="featured-products-images-container h-3/5 w-[95%] flex flex-wrap justify-center items-center">
+            <div className="featured-products-images-container h-3/5 w-[95%] flex flex-wrap justify-center 
+            items-center">
                 {renderedImages}             
             </div>
         </div>

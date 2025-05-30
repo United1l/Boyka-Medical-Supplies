@@ -1,9 +1,9 @@
-import hero from '../assets/Hero.jpg'
+import hero from '../assets/hero.jpg'
 
 const Hero = () => {
     return (
-        <section className="h-full w-full mr-auto ml-auto mt-24 flex flex-col items-center justify-space-evenly">
-            <div className="hero-text-container w-4/5 md:w-2/3 h-2/5 flex flex-col items-center">
+        <section className="h-full w-full mr-auto ml-auto mt-18 flex flex-col items-center justify-evenly">
+            <div className="hero-text-container w-4/5 md:w-2/3 h-2/5 flex flex-col items-center justify-center">
                 <h1 className="hero-text text-[#4CA771] text-4xl md:text-5xl 
                 font-bold text-center ml-auto mr-auto">
                     Attain quality Medical Supplies with TrustCare MS
