@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+
 const Services = () => {
     const servicesText = [
         {
@@ -14,10 +17,19 @@ const Services = () => {
         }
     ];
 
+    const checkIconCircle = () => (
+        <div className="w-6 h-6 rounded-full bg-[#4CA771] flex items-center justify-center mr-2">
+            <FontAwesomeIcon icon={faCheck} className="text-white" />
+        </div>
+    ); 
+
     const renderedServices = servicesText.map((service, index) => (
         <div key={index} className="service-container flex flex-col flex-[0 0 33.33%] items-center 
             justify-center py-10 mx-4">
-            <h3 className="service-title text-2xl font-bold text-[#4CA771]">{service.title}</h3>
+            <div className="service-icon flex items-center justify-between mb-4">
+                {checkIconCircle()}
+                <h3 className="service-title text-2xl font-bold text-[#4CA771]">{service.title}</h3>
+            </div>
             <p className="service-description text-sm font-normal mt-2 text-center text-[#6b9080]">
                 {service.description}
             </p>
