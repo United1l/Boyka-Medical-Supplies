@@ -38,7 +38,7 @@ const Header = () => {
           {renderedLinks}
         </div>
 
-        <div className="text-xs  flex justify-between items-center h-auto w-[13rem] ml-auto">
+        <div className="text-xs flex justify-between items-center h-auto w-[13rem] ml-auto">
           <Button className="hover:text-[#013237] cursor-pointer">
             NEW ACCOUNT
           </Button>
