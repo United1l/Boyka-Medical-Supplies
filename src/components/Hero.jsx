@@ -3,7 +3,8 @@ import hero from '../assets/hero.jpg'
 const Hero = () => {
     return (
         <section className="h-4/5 w-full mr-auto ml-auto mt-16 flex items-center justify-center
-         text-white"
+         text-[#343a40] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full
+         before:bg-[#4CA771] before:opacity-30 before:z-0"
             style={{ backgroundImage: `url(${hero})`, backgroundSize: 'cover', backgroundPosition: 'center', }}>
             <div className="hero-text-container w-4/5 md:w-2/3 h-2/5 flex flex-col items-center justify-center">
                 <h1 className="hero-text text-4xl md:text-5xl 
