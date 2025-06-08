@@ -10,8 +10,8 @@ const PopularProducts = () => {
     ];
     
     const renderedImages = images.map((image, index) => (
-        <div className="container w-full h-full flex flex-col justify-center items-center">
-            <div key={index} className="popular-container w-30%] h-3/5 flex justify-center items-center
+        <div key={index} className="container w-2/3 md:w-1/3 h-full flex flex-col justify-center items-center">
+            <div className="popular-container w-[55%] h-3/5 flex justify-center items-center
             bg-[#4CA771] mr-4 mt-4 rounded-[50%]">
                 <img src={image.img} alt={image.alt} className="w-3/4 h-3/4 object-cover" />
             </div>
@@ -31,7 +31,7 @@ const PopularProducts = () => {
             <h2 className="text-4xl text-center text-[#4CA771] font-bold p-8">
                 Popular Products
             </h2>
-            <div className="popular-products-images-container h-3/5 w-[95%] flex flex-wrap justify-evenly 
+            <div className="popular-products-images-container h-3/5 w-[95%] flex flex-row flex-wrap justify-evenly 
             items-center">
                 {renderedImages}             
             </div>
