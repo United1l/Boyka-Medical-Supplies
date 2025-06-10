@@ -37,7 +37,7 @@ const Services = () => {
     ));
 
     return (
-        <div className="h-2/5 w-full mt-32 md:mt-10 flex flex-col items-center justify-center">
+        <div className="h-2/5 w-full mt-72 md:mt-16 flex flex-col items-center justify-center">
             <h1 className="text-4xl text-[#4CA771] font-bold">
                 Our Services
             </h1>

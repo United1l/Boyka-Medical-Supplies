@@ -1,6 +1,6 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
-import PopularProducts from './components/Popular-products'
+import PopularProducts from './components/PopularProducts'
 import Services from './components/Services'
 
 function App() {
