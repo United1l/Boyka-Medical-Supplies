@@ -1,6 +1,6 @@
 const TiltedImageContainer = ({ sourceImage }) => {
   return (
-    <div className="h-[50%] w-[60%] md:h-[70%] flex-1"
+    <div className="w-full md:w-1/2 h-full"
       style={{ backgroundImage: `url(${sourceImage})`, backgroundSize: 'cover', backgroundPosition: 'center', }}>
     </div>  
   )

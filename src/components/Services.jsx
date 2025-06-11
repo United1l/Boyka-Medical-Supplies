@@ -10,16 +10,16 @@ const services = [
 ]; 
 
 const renderedServices = services.map((service, index) => (
-    <div key={index} className="w-full h-[40%] flex justify-evenly items-center">
+    <div key={index} className="w-full h-[50%] flex flex-wrap justify-between items-center">
         <TiltedImageContainer sourceImage={service.img} />
-        <p className="text-[#343a40] text-lg font-normal mt-2 italic flex-1">{service.title}</p>
+        <p className="text-[#343a40] text-lg font-normal text-center mt-2 italic">{service.title}</p>
     </div>
 ))
 
 
 const Services = () => {
     return (
-        <div className="h-full w-full mt-84 md:mt-16 flex flex-col">
+        <div className="h-full w-full p-12 md:p-28 mt-84 md:mt-16 flex flex-col justify-evenly">
             {renderedServices}
         </div>
     )
