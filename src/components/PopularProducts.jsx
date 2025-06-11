@@ -29,7 +29,7 @@ const PopularProducts = () => {
             <h2 className="text-4xl text-center text-[#4CA771] font-bold p-8">
                 Popular Products
             </h2>
-            <div className="popular-products-images-container h-full w-[95%] flex flex-wrap justify-evenly 
+            <div className="popular-products-images-container h-full w-full md:px-28 flex flex-wrap justify-evenly 
             items-center">
                 {renderedImages}             
             </div>
