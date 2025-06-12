@@ -9,17 +9,28 @@ const services = [
     { img: products, alt: "Products", title: "Quality Products" },
 ]; 
 
-const renderedServices = services.map((service, index) => (
-    <div key={index} className="w-full h-[50%] flex flex-wrap justify-between items-center">
-        <TiltedImageContainer sourceImage={service.img} />
-        <p className="text-[#343a40] text-lg font-normal text-center mt-2 italic">{service.title}</p>
-    </div>
-))
+const renderedServices = services.map((service, index) => {
+    if (index % 2 !== 0) { 
+      return ( 
+         <div key={index} className="w-full h-[20%] flex flex-wrap justify-between items-center">
+            <p className="text-[#343a40] text-lg font-normal text-center mt-2 italic">{service.title}</p>
+            <TiltedImageContainer sourceImage={service.img} />
+        </div>
+        );
+    } else {
+        return ( 
+            <div key={index} className="w-full h-[20%] flex flex-wrap justify-between items-center">
+                <TiltedImageContainer sourceImage={service.img} />
+                <p className="text-[#343a40] text-lg font-normal text-center mt-2 italic">{service.title}</p>
+            </div>
+        );
+    }
+});
 
 
 const Services = () => {
     return (
-        <div className="h-full w-full p-12 md:p-28 mt-84 md:mt-16 flex flex-col justify-evenly">
+        <div className="h-full w-full p-12 md:p-28 mt-84 md:mt-16 flex flex-col justify-between">
             {renderedServices}
         </div>
     )
