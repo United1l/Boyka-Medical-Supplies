@@ -12,14 +12,14 @@ const services = [
 const renderedServices = services.map((service, index) => {
     if (index % 2 !== 0) { 
       return ( 
-         <div key={index} className="w-full h-[40%] flex flex-wrap justify-between items-center">
+         <div key={index} className="w-full h-[35%] flex flex-wrap justify-between items-center mt-24">
             <p className="text-[#343a40] text-lg font-normal text-center mt-2 italic">{service.title}</p>
             <TiltedImageContainer sourceImage={service.img} altText={service.alt} />
         </div>
         );
     } else {
         return ( 
-            <div key={index} className="w-full h-[20%] flex flex-wrap justify-between items-center">
+            <div key={index} className="w-full h-[35%] flex flex-wrap justify-between items-center mt-24">
                 <TiltedImageContainer sourceImage={service.img} />
                 <p className="text-[#343a40] text-lg font-normal text-center mt-2 italic">{service.title}</p>
             </div>
@@ -30,7 +30,7 @@ const renderedServices = services.map((service, index) => {
 
 const Services = () => {
     return (
-        <div className="h-full w-full space-y-12 p-12 md:p-28 mt-84 md:mt-16 flex flex-col justify-between items-center">
+        <div className="h-full w-full p-4 md:p-28 mt-84 md:mt-16 flex flex-col items-center">
             {renderedServices}
         </div>
     )
