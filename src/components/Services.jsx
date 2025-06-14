@@ -30,7 +30,7 @@ const renderedServices = services.map((service, index) => {
 
 const Services = () => {
     return (
-        <div className="h-full w-full p-4 md:p-28 mt-84 md:mt-16 flex flex-col items-center">
+        <div className="h-full w-full px-12 md:p-28 mt-84 md:mt-16 flex flex-col items-center justify-evenly">
             {renderedServices}
         </div>
     )
