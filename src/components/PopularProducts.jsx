@@ -15,7 +15,9 @@ const PopularProducts = () => {
             bg-[#4CA771] mr-4 mt-4 rounded-[50%]">
                 <img src={image.img} alt={image.alt} className="w-3/4 h-3/4" />
             </div>
-            <p className="text-[#343a40] text-lg font-normal mt-2 italic">{image.title}</p>
+            <p className="text-[#343a40] text-lg text-center font-bold tracking-wide mt-2 italic">
+                {image.title}
+            </p>
         </div>
      ));
     
