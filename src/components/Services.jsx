@@ -15,7 +15,7 @@ const services = [
 const renderedServices = services.map((service, index) => {
     if (index % 2 !== 0) { 
       return ( 
-         <div key={index} className="w-full h-[35%] flex flex-wrap justify-between items-center mt-[10rem]">
+         <div key={index} className="w-full h-auto flex flex-wrap justify-between items-center mt-[10rem]">
             <div className="w-full md:w-1/2 h-auto flex flex-col justify-center items-center">
                 <p className="mt-4 tracking-wide text-[#343a40] text-2xl font-bold text-center italic">
                     {service.title}
@@ -29,7 +29,7 @@ const renderedServices = services.map((service, index) => {
         );
     } else {
         return ( 
-            <div key={index} className="w-full h-[35%] flex flex-wrap justify-between items-center mt-[10rem]">
+            <div key={index} className="w-full h-auto flex flex-wrap justify-between items-center mt-[10rem]">
                 <TiltedImageContainer sourceImage={service.img} />
                 <div className="w-full md:w-1/2 h-auto flex flex-col justify-center items-center">
                     <p className="mt-4 tracking-wide text-[#343a40] text-2xl font-bold text-center italic">
@@ -47,7 +47,7 @@ const renderedServices = services.map((service, index) => {
 
 const Services = () => {
     return (
-        <div className="h-full w-full px-12 md:p-18 mt-84 md:mt-16 flex flex-col items-center justify-between">
+        <div className="h-auto w-full px-12 md:p-18 mt-84 md:mt-16 flex flex-col items-center justify-between">
             <div>
                 <h2 className="text-4xl text-center text-[#4CA771] font-bold p-8">
                     Medical supplies right at your doorstep
