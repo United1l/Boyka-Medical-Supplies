@@ -47,7 +47,15 @@ const renderedServices = services.map((service, index) => {
 
 const Services = () => {
     return (
-        <div className="h-full w-full px-12 md:p-28 mt-84 md:mt-16 flex flex-col items-center justify-evenly">
+        <div className="h-full w-full px-12 md:p-18 mt-84 md:mt-16 flex flex-col items-center justify-between">
+            <div>
+                <h2 className="text-4xl text-center text-[#4CA771] font-bold p-8">
+                    Medical supplies right at your doorstep
+                </h2>
+                <p className="text-[#343a40] text-lg text-center tracking-wide px-4 md:px-16">
+                    At TrustCare, we take care of all the heavylifting so that you can focus on saving lives.
+                </p>
+            </div>
             {renderedServices}
         </div>
     )
