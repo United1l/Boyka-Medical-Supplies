@@ -26,7 +26,7 @@ const PopularProducts = () => {
     // The images are styled to be circular and centered within their containers
 
     return (
-        <div className="popular-products h-2/5 w-full mt-16 flex flex-col items-center
+        <div className="popular-products h-auto w-full mt-16 flex flex-col items-center
             justify-evenly">
             <h2 className="text-4xl text-center text-[#4CA771] font-bold p-8">
                 Popular Products

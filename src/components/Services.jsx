@@ -47,7 +47,7 @@ const renderedServices = services.map((service, index) => {
 
 const Services = () => {
     return (
-        <div className="h-auto w-full px-12 md:p-18 mt-84 md:mt-16 flex flex-col items-center justify-between">
+        <div className="h-auto w-full px-12 md:p-18 mt-16 flex flex-col items-center justify-between">
             <div>
                 <h2 className="text-4xl text-center text-[#4CA771] font-bold p-8">
                     Medical supplies right at your doorstep
