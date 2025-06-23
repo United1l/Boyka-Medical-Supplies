@@ -17,10 +17,10 @@ const renderedServices = services.map((service, index) => {
       return ( 
          <div key={index} className="w-full h-auto flex flex-wrap justify-between items-center mt-[10rem]">
             <div className="w-full md:w-1/2 h-auto flex flex-col justify-center items-center">
-                <p className="mt-4 tracking-wide text-[#343a40] text-2xl font-bold text-center italic">
+                <p className="mt-4 tracking-wide text-[#343a40] text-2xl md:text-4xl font-bold text-center italic">
                     {service.title}
                 </p>
-                <p className="my-2 tracking-tight text-[#343a40] text-lg text-center">
+                <p className="my-2 tracking-tight text-[#343a40] text-lg md:text-2xl text-center">
                     {service.paragraph}
                 </p>
             </div>
@@ -32,10 +32,10 @@ const renderedServices = services.map((service, index) => {
             <div key={index} className="w-full h-auto flex flex-wrap justify-between items-center mt-[10rem]">
                 <TiltedImageContainer sourceImage={service.img} />
                 <div className="w-full md:w-1/2 h-auto flex flex-col justify-center items-center">
-                    <p className="mt-4 tracking-wide text-[#343a40] text-2xl font-bold text-center italic">
+                    <p className="mt-4 tracking-wide text-[#343a40] text-2xl md:text-4xl font-bold text-center italic">
                         {service.title}
                     </p>
-                    <p className="my-2 tracking-tight text-[#343a40] text-lg text-center">
+                    <p className="my-2 tracking-tight text-[#343a40] text-lg md:text-2xl text-center">
                         {service.paragraph}
                     </p>
                 </div>
