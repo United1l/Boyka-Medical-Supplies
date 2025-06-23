@@ -20,7 +20,7 @@ const renderedServices = services.map((service, index) => {
                 <p className="mt-4 tracking-wide text-[#343a40] text-2xl md:text-4xl font-bold text-center italic">
                     {service.title}
                 </p>
-                <p className="my-2 tracking-tight text-[#343a40] text-lg md:text-2xl text-center">
+                <p className="my-2 tracking-wide text-[#343a40] text-lg md:text-2xl text-center">
                     {service.paragraph}
                 </p>
             </div>
@@ -35,7 +35,7 @@ const renderedServices = services.map((service, index) => {
                     <p className="mt-4 tracking-wide text-[#343a40] text-2xl md:text-4xl font-bold text-center italic">
                         {service.title}
                     </p>
-                    <p className="my-2 tracking-tight text-[#343a40] text-lg md:text-2xl text-center">
+                    <p className="my-2 tracking-wide text-[#343a40] text-lg md:text-2xl text-center">
                         {service.paragraph}
                     </p>
                 </div>
