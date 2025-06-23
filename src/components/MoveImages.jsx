@@ -1,6 +1,7 @@
 const MoveImages = ({ images }) => {
   const renderedImages = images.map((image, index) => (
-    <div key={index} className="item size-[100px] absolute left-[100%] animate-[autoRun_10s_linear_infinite]"
+    <div key={index} className="item size-[40px] md:size-[100px] absolute left-[100%]
+     animate-[autoRun_10s_linear_infinite]"
       style={{ animationDelay: `${index}s` }}>
       {/* The absolute positioning and animation will move the images */}
       {/* from right to left across the screen */}
