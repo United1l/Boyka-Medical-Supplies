@@ -20,7 +20,7 @@ const Customers = () => {
   ];
 
   return (
-    <div className="w-full h-auto flex flex-col items-center mt-16">
+    <div className="w-full h-auto flex flex-col items-center mt-24">
       <h2 className="text-4xl text-center text-[#4CA771] font-bold p-8">
         Clients love us, and we love them back!
       </h2>
