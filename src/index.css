@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+    --animate-autoRun: autoRun 10s linear infinite;
+
+    @keyframes autoRun {
+        from {
+            left: 100%;
+        }
+        to {
+            left: calc(100px * -1);
+        }
+    }
+}
+
 a:hover {
     color: #013237;
     cursor: pointer;
