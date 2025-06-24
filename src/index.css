@@ -17,3 +17,7 @@ a:hover {
     color: #013237;
     cursor: pointer;
 }
+
+.link>a:hover {
+    color: white;
+}
