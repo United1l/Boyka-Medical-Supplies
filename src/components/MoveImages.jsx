@@ -1,8 +1,15 @@
+import { useState } from "react"
+
 const MoveImages = ({ images }) => {
+  const [hovered, setHovered] = useState(false)
+  
   const renderedImages = images.map((image, index) => (
     <div key={index} className="item size-[40px] md:size-[100px] absolute left-[100%]
      animate-[autoRun_10s_linear_infinite]"
-      style={{ animationDelay: `${index}s` }}>
+      style={{ animationDelay: `${index}s`, animationPlayState: hovered ? 'paused' : 'running' }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
       {/* The absolute positioning and animation will move the images */}
       {/* from right to left across the screen */}
       <img src={image.src} alt={image.alt} className="h-full" />
