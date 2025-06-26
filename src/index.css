@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
-@theme {
+:root {
     --animate-autoRun: autoRun 10s linear infinite;
+}
 
-    @keyframes autoRun {
-        from {
-            left: 100%;
-        }
-        to {
-            left: calc(100px * -1);
-        }
+@keyframes autoRun {
+    from {
+        left: 100%;
+    }
+    to {
+        left: calc(100px * -1);
     }
 }
 
