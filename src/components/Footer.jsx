@@ -4,8 +4,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
   return (
-    <footer className="w-full h-auto bg-[#4CA771] mt-24 p-12 text-[#343a40]">
-      <div className="w-full h-4/5 flex flex-wrap justify-evenly items-center">
+    <footer className="w-full h-auto bg-[#4CA771] mt-24 px-12 py-6 text-[#343a40]">
+      <div className="w-full h-4/5 flex flex-wrap justify-evenly items-center mt-4">
         <div className="w-2/3 md:w-1/3 flex flex-col justify-center items-center mb-8 md:mb-0">
           <h2 className="text-2xl font-bold mb-4">
             TrustCare Medical Supply
@@ -55,7 +55,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="w-3/5 border-t-2 border-[#495057] mx-auto mt-16">
+      <div className="w-3/5 border-t-2 border-[#495057] mx-auto mt-16 mb-auto">
         <h3 className="text-center text-lg font-semibold mt-4">
           © 2025 TrustCare Medical Supply. All rights reserved.
         </h3>

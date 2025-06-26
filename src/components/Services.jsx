@@ -17,7 +17,7 @@ const renderedServices = services.map((service, index) => {
       return ( 
          <div key={index} className="w-full h-auto flex flex-wrap justify-between items-center mt-[10rem]">
             <div className="w-full md:w-1/2 h-auto flex flex-col justify-center items-center">
-                <p className="mt-4 tracking-wide text-[#4CA771] text-2xl lg:text-4xl font-bold text-center italic">
+                <p className="mt-4 tracking-wide text-[#4CA771] text-2xl lg:text-4xl font-bold text-center">
                     {service.title}
                 </p>
                 <p className="my-2 tracking-wide text-[#343a40] text-lg lg:text-2xl text-center">
@@ -32,7 +32,7 @@ const renderedServices = services.map((service, index) => {
             <div key={index} className="w-full h-auto flex flex-wrap justify-between items-center mt-[10rem]">
                 <TiltedImageContainer sourceImage={service.img} />
                 <div className="w-full md:w-1/2 h-auto flex flex-col justify-center items-center">
-                    <p className="mt-4 tracking-wide text-[#4CA771] text-2xl lg:text-4xl font-bold text-center italic">
+                    <p className="mt-4 tracking-wide text-[#4CA771] text-2xl lg:text-4xl font-bold text-center">
                         {service.title}
                     </p>
                     <p className="my-2 tracking-wide text-[#343a40] text-lg lg:text-2xl text-center">
