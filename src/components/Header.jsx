@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 import Button from './Button'
@@ -12,14 +13,14 @@ const Header = () => {
   )
 
   const links = [
-    { label: "STORE", href: "#"},
+    { label: "STORE", href: "/shop"},
     { label: "ABOUT", href: "#" },
     { label: "NEW ACCOUNT", href: "#" },
     { label: "SIGN IN", href: "#" },
   ];
 
   const renderedLinks = links.slice(0, 2).map((link, i) => (
-    <a key={i} href={link.href}>{link.label}</a>
+    <Link key={i} to={link.href}>{link.label}</Link>
   ));
 
   return (
