@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -31,7 +32,7 @@ const Footer = () => {
           </h2>
           <ul>
             <li className="link">
-              <a href="#">Shop</a>
+              <Link to="/shop">Shop</Link>
             </li>
             <li className="link">
               <a href="#">About</a>
@@ -44,7 +45,7 @@ const Footer = () => {
           </h2>
           <ul>
             <li className="link">
-              <a href="#">My Account</a>
+              <Link to="#">My Account</Link>
             </li>
             <li className="link">
               <a href="#">Order History</a>
