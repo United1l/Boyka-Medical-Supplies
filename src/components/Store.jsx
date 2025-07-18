@@ -1,4 +1,4 @@
-const Shop = () => {
+const Store = () => {
   return (
     <div className="h-screen w-screen text-green-500">
         <div className="w-full h-auto flex items-center justify-evenly text-4xl font-semibold p-4">
@@ -10,4 +10,4 @@ const Shop = () => {
   )
 }
 
-export default Shop
+export default Store

@@ -32,7 +32,7 @@ const Footer = () => {
           </h2>
           <ul>
             <li className="link">
-              <Link to="/shop">Shop</Link>
+              <Link to="/store">Store</Link>
             </li>
             <li className="link">
               <a href="#">About</a>

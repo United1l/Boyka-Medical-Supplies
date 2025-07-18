@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router'
 import Home from './components/Home'
-import Shop from './components/Shop'
+import Store from './components/Store'
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/store" element={<Store />} />
       </Routes>
     </div>  
   )

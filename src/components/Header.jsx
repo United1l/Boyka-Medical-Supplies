@@ -13,7 +13,7 @@ const Header = () => {
   )
 
   const links = [
-    { label: "STORE", href: "/shop"},
+    { label: "STORE", href: "/store"},
     { label: "ABOUT", href: "#" },
     { label: "NEW ACCOUNT", href: "#" },
     { label: "SIGN IN", href: "#" },
