@@ -15,8 +15,6 @@ const Header = () => {
   const links = [
     { label: "STORE", href: "/store"},
     { label: "ABOUT", href: "#" },
-    { label: "NEW ACCOUNT", href: "#" },
-    { label: "SIGN IN", href: "#" },
   ];
 
   const renderedLinks = links.slice(0, 2).map((link, i) => (
@@ -34,18 +32,8 @@ const Header = () => {
       </Button>
 
       <nav className="hidden w-2/3 md:flex items-center relative">
-        <div className="text-xs flex justify-between items-center h-auto min-w-2/5 mr-auto">
+        <div className="text-xs flex justify-between items-center h-auto min-w-4/5 mr-auto">
           {renderedLinks}
-        </div>
-
-        <div className="text-xs flex justify-between items-center h-auto w-[13rem] ml-auto">
-          <Button className="hover:text-[#013237] cursor-pointer">
-            NEW ACCOUNT
-          </Button>
-          <Button className="w-[5rem] p-2 border-2 border-[#C0E6BA] cursor-pointer
-          hover:bg-[#C0E6BA] hover:text-[#013237] mr-2">
-            SIGN IN
-          </Button>
         </div>
       </nav>
       <div className={`${menuState? "flex" : "hidden"} md:hidden absolute w-full min-h-[40rem] bg-[#4CA771] top-20 p-6
