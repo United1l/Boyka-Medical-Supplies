@@ -39,22 +39,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="w-2/3 md:w-1/3 flex flex-col justify-center items-center mb-8 md:mb-0">
-          <h2 className="text-2xl font-bold mb-4">
-            My Account
-          </h2>
-          <ul>
-            <li className="link">
-              <Link to="#">My Account</Link>
-            </li>
-            <li className="link">
-              <a href="#">Order History</a>
-            </li>
-            <li className="link">
-              <a href="#">Wish List</a>
-            </li>
-          </ul>
-        </div>
       </div>
       <div className="w-3/5 border-t-2 border-[#495057] mx-auto mt-16 mb-auto">
         <h3 className="text-center text-lg font-semibold mt-4">
