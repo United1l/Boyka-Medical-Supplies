@@ -5,6 +5,8 @@ import { faBars, faClose, faMagnifyingGlass } from '@fortawesome/free-solid-svg-
 import Button from './Button'
 import logo from '../assets/logo.jpeg'
 import Drugs from './Drugs'
+import NonDrugs from './Non-drugs'
+import Equipment from './Equipment'
 
 const Store = () => {
   const [menuState, setMenuState] = useState(false);
@@ -51,6 +53,8 @@ const Store = () => {
       <div className="placeholder-div h-[6rem]"></div>
       <section className="w-full h-5/6">
             {highlighted === "Drugs" && <Drugs />}
+            {highlighted === "Non-Drugs" && <NonDrugs />}
+            {highlighted === "Equipment" && <Equipment />}
       </section>      
     </div>
   )
