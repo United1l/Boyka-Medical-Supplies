@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faClose, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import Button from './Button'
 import logo from '../assets/logo.jpeg'
+import Drugs from './Drugs'
 
 const Store = () => {
   const [menuState, setMenuState] = useState(false);
@@ -36,7 +37,7 @@ const Store = () => {
         <nav className="hidden w-4/5 md:flex items-center relative font-semibold text-[#4CA771]">
           <div className="flex w-3/4 justify-evenly text-2xl">
             {categories.map((category, index) => (
-              <h3 key={index} className={`cursor-pointer ${category === highlighted ? 'border-b-2' : 'border-b-0'} border-[#4CA771]`}
+              <h3 key={index} className={`cursor-pointer ${category === highlighted ? 'border-b-2 border-[#4CA771]' : ''}`}
                 onClick={() => {handleHighlight(category)}}>
                 {category}
               </h3>
@@ -47,6 +48,10 @@ const Store = () => {
           </div>
         </nav>
       </header>
+      <div className="placeholder-div h-[6rem]"></div>
+      <section className="w-full h-5/6">
+            {highlighted === "Drugs" && <Drugs />}
+      </section>      
     </div>
   )
 }
