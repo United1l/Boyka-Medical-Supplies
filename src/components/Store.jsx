@@ -49,6 +49,17 @@ const Store = () => {
             <FontAwesomeIcon icon={faMagnifyingGlass} className="cursor-pointer mr-8 text-2xl" />
           </div>
         </nav>
+        <div className={`${menuState? "flex" : "hidden"} md:hidden absolute w-full min-h-[40rem] bg-[#4CA771] top-20 p-6
+        flex-col items-center justify-evenly z-10`}>
+          {
+            categories.map((category, index) => (
+              <h3 key={index} className="cursor-pointer text-2xl"
+                onClick={() => {handleHighlight(category)}}>
+                {category}
+              </h3>
+            ))
+          }
+      </div>
       </header>
       <div className="placeholder-div h-[6rem]"></div>
       <section className="w-full h-5/6">
