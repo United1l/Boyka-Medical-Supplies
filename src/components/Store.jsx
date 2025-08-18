@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faClose, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faClose, } from '@fortawesome/free-solid-svg-icons'
 import Button from './Button'
 import logo from '../assets/logo.jpeg'
 import Drugs from './Drugs'
@@ -44,9 +44,6 @@ const Store = () => {
                 {category}
               </h3>
             ))}
-          </div>
-          <div className="flex w-1/4 justify-end items-center">
-            <FontAwesomeIcon icon={faMagnifyingGlass} className="cursor-pointer mr-8 text-2xl" />
           </div>
         </nav>
         <div className={`${menuState? "flex" : "hidden"} md:hidden absolute w-full min-h-[40rem] bg-[#4CA771] top-20 p-6
