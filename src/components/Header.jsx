@@ -14,7 +14,7 @@ const Header = () => {
 
   const links = [
     { label: "STORE", href: "/store"},
-    { label: "ABOUT", href: "#" },
+    { label: "ABOUT", href: "/about" },
   ];
 
   const renderedLinks = links.slice(0, 2).map((link, i) => (
