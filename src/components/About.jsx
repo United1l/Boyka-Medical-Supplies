@@ -11,31 +11,31 @@ return (
         <header className="h-[5rem] w-full flex 
             items-center justify-between z-10 p-4">
             <Link to="/">
-                    <img src={logo} width={55} height={55} alt="TrustCare MS logo" className="ml-2 cursor-pointer" />
+                <img src={logo} width={55} height={55} alt="TrustCare MS logo" className="ml-2 cursor-pointer" />
             </Link>
-            <h1 className="text-3xl text-[#4CA771] absolute left-[30%] font-bold tracking-wide">
-                    ABOUT TRUSTCARE MEDICAL SUPPLY
+            <h1 className="sm:text-lg md:text-2xl text-3xl text-[#4CA771] absolute left-[30%] font-bold tracking-wide text-center">
+                ABOUT TRUSTCARE MEDICAL SUPPLY
             </h1>
         </header>
         <section className="mt-[5rem] flex flex-col items-center">
             <p className="w-4/5 text-lg text-justify text-gray-700">
-                    <b>TrustCare Medical Supply</b> is a trusted leader in the wholesale and retail of hospital equipment and 
-                    pharmaceuticals. Serving hospitals, clinics, pharmacies, and healthcare providers, we deliver high-quality
-                    medical devices and essential drugs with unwavering reliability and exceptional service. Whether fulfilling
-                    large-scale institutional orders or meeting individual clinical needs, we guarantee timely delivery, expert guidance, 
-                    and complete compliance with industry standards. Our dedicated team works closely with clients to understand their
-                    unique requirements, ensuring tailored solutions that optimize healthcare outcomes
+                <b>TrustCare Medical Supply</b> is a trusted leader in the wholesale and retail of hospital equipment and 
+                pharmaceuticals. Serving hospitals, clinics, pharmacies, and healthcare providers, we deliver high-quality
+                medical devices and essential drugs with unwavering reliability and exceptional service. Whether fulfilling
+                large-scale institutional orders or meeting individual clinical needs, we guarantee timely delivery, expert guidance, 
+                and complete compliance with industry standards. Our dedicated team works closely with clients to understand their
+                unique requirements, ensuring tailored solutions that optimize healthcare outcomes
             </p>
             <img src={pharma7} alt="Pharmaceuticals" className="w-4/5 my-10 rounded-lg shadow-lg"/>
             <h2 className="text-2xl mt-10 font-semibold">Our Vison</h2>
             <p className="w-4/5 text-lg text-justify text-gray-700 my-4">
-                    To be the most trusted and reliable provider of medical supplies, enhancing healthcare delivery and patient outcomes
-                    across every community we serve.
-                    We strive to set the benchmark for excellence in medical supply distribution, fostering trust and long-term partnerships
-                    with healthcare providers through reliability, innovation, and a commitment to improving lives.
-                    We envision a future where healthcare providers have seamless access to the best medical supplies, empowering them to 
-                    deliver outstanding care. By prioritizing reliability, innovation, and ethical practices, we aim to build lasting
-                    relationships and make a positive impact on the health and well-being of every community we serve.
+                To be the most trusted and reliable provider of medical supplies, enhancing healthcare delivery and patient outcomes
+                across every community we serve.
+                We strive to set the benchmark for excellence in medical supply distribution, fostering trust and long-term partnerships
+                with healthcare providers through reliability, innovation, and a commitment to improving lives.
+                We envision a future where healthcare providers have seamless access to the best medical supplies, empowering them to 
+                deliver outstanding care. By prioritizing reliability, innovation, and ethical practices, we aim to build lasting
+                relationships and make a positive impact on the health and well-being of every community we serve.
             </p>
             <img src={pharma3} alt="Medical Equipment" className="w-4/5 my-10 rounded-lg shadow-lg"/>
 
@@ -70,6 +70,19 @@ return (
                 <li>Quality Assurance: Every product we sell is sourced from certified suppliers and undergoes strict quality control measures.</li>
             </ul>
             <img src={pharma4} alt="Medical Products" className="w-4/5 my-10 rounded-lg shadow-lg"/>
+        </section>
+        <section className="mt-[5rem] flex flex-col items-center">
+            <h2 className="text-2xl mt-10 font-semibold">Location</h2>
+            <p>Okyerekrom, Ejisu, Ghana</p>
+            <div className="w-4/5 my-10 rounded-lg shadow-lg">
+                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Okyerekrom,%20Ejisu,%20Ghana+(TrustCare%20Medical%20Supply)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                <a href="https://www.mapsdirections.info/fr/calculer-la-population-sur-une-carte">mesurer la population sur une carte</a></iframe>
+            </div>
+        </section>
+        <section className="mt-[5rem] flex flex-col items-center">
+            <h2 className="text-2xl my-5 font-semibold">Contact Information</h2>
+            <p>Email: Trustcaremedicalsupply@gmail.com</p>
+            <p>Phone: +233 545 022 250</p>
         </section>
     </div>
 )
