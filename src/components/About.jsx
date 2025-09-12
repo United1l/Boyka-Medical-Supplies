@@ -7,13 +7,13 @@ import pharma8 from '../assets/about/pharma8.webp'
 
 const About = () => {
 return (
-    <div className="h-screen w-screen">
-        <header className="h-[5rem] w-full flex 
-            items-center justify-between z-10 p-4">
-            <Link to="/">
-                <img src={logo} width={55} height={55} alt="TrustCare MS logo" className="ml-2 cursor-pointer" />
+    <div className="h-screen w-screen overflow-x-hidden">
+        <header className="h-[5rem] w-full flex
+            items-center justify-center z-10 p-4 relative">
+            <Link to="/" className="absolute left-6">
+                <img src={logo} width={55} height={55} alt="TrustCare MS logo" className="cursor-pointer" />
             </Link>
-            <h1 className="sm:text-lg md:text-2xl text-3xl text-[#4CA771] absolute left-[30%] font-bold tracking-wide text-center">
+            <h1 className="text-sm md:text-2xl text-[#4CA771] font-bold tracking-wide text-center">
                 ABOUT TRUSTCARE MEDICAL SUPPLY
             </h1>
         </header>
@@ -26,7 +26,7 @@ return (
                 and complete compliance with industry standards. Our dedicated team works closely with clients to understand their
                 unique requirements, ensuring tailored solutions that optimize healthcare outcomes
             </p>
-            <img src={pharma7} alt="Pharmaceuticals" className="w-4/5 my-10 rounded-lg shadow-lg"/>
+            <img src={pharma7} alt="Pharmaceuticals" className="max-w-4/5 h-auto my-10 rounded-lg shadow-lg"/>
             <h2 className="text-2xl mt-10 font-semibold">Our Vison</h2>
             <p className="w-4/5 text-lg text-justify text-gray-700 my-4">
                 To be the most trusted and reliable provider of medical supplies, enhancing healthcare delivery and patient outcomes
@@ -37,7 +37,7 @@ return (
                 deliver outstanding care. By prioritizing reliability, innovation, and ethical practices, we aim to build lasting
                 relationships and make a positive impact on the health and well-being of every community we serve.
             </p>
-            <img src={pharma3} alt="Medical Equipment" className="w-4/5 my-10 rounded-lg shadow-lg"/>
+            <img src={pharma3} alt="Medical Equipment" className="max-w-4/5 h-auto my-10 rounded-lg shadow-lg"/>
 
             <h2 className="text-2xl mt-10 font-semibold">Our Mission</h2>
             <p className="w-4/5 text-lg text-justify text-gray-700 my-4">
@@ -49,7 +49,7 @@ return (
                     Through continuous innovation and a focus on reliability, we aim to exceed the expectations of our clients and make a
                     meaningful difference in the healthcare industry.
             </p>
-            <img src={pharma8} alt="Medical Supplies" className="w-4/5 my-10 rounded-lg shadow-lg"/>
+            <img src={pharma8} alt="Medical Supplies" className="max-w-4/5 h-auto my-10 rounded-lg shadow-lg"/>
 
             <h2 className="text-2xl mt-10 font-semibold">Core Values</h2>
             <ul className="w-4/5 text-lg text-gray-700 list-disc pl-6 my-4">
@@ -69,7 +69,7 @@ return (
                     support tailored to your needs.</li>
                 <li>Quality Assurance: Every product we sell is sourced from certified suppliers and undergoes strict quality control measures.</li>
             </ul>
-            <img src={pharma4} alt="Medical Products" className="w-4/5 my-10 rounded-lg shadow-lg"/>
+            <img src={pharma4} alt="Medical Products" className="max-w-4/5 h-auto my-10 rounded-lg shadow-lg"/>
         </section>
         <section className="mt-[5rem] flex flex-col items-center">
             <h2 className="text-2xl mt-10 font-semibold">Location</h2>
@@ -81,7 +81,7 @@ return (
         </section>
         <section className="mt-[5rem] flex flex-col items-center">
             <h2 className="text-2xl my-5 font-semibold">Contact Information</h2>
-            <p>Email: Trustcaremedicalsupply@gmail.com</p>
+            <p>Email: trustcaremsup21@gmail.com</p>
             <p>Phone: +233 545 022 250</p>
         </section>
     </div>
