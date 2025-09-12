@@ -10,12 +10,12 @@ const Footer = () => {
           <h2 className="text-2xl font-bold mb-4">
             TrustCare Medical Supply
           </h2>
-          <div className="icons w-full flex justify-evenly items-center mt-4">
-              <span className="flex justify-center items-center">
+          <div className="icons w-full flex flex-wrap justify-evenly items-center mt-4">
+              <span className="flex flex-wrap items-center">
                 <FontAwesomeIcon icon={faPhone} className="text-2xl" />
                 <p>+233 545 022 250</p>
               </span>
-              <span className="flex justify-center items-center">
+              <span className="flex flex-wrap items-center">
                 <FontAwesomeIcon icon={faEnvelope} className="text-2xl mr-2" />
                 <p>trustcaremsup21@gmail.com</p>
               </span>
