@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
   return (
@@ -12,18 +11,14 @@ const Footer = () => {
             TrustCare Medical Supply
           </h2>
           <div className="icons w-full flex justify-evenly items-center mt-4">
-            <a href="#" className="mx-2">
-              <FontAwesomeIcon icon={faFacebook} className="text-2xl" />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faXTwitter} className="text-2xl" />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faEnvelope} className="text-2xl" />
-            </a>
+              <span className="flex justify-center items-center">
+                <FontAwesomeIcon icon={faPhone} className="text-2xl" />
+                <p>+233 545 022 250</p>
+              </span>
+              <span className="flex justify-center items-center">
+                <FontAwesomeIcon icon={faEnvelope} className="text-2xl mr-2" />
+                <p>trustcaremsup21@gmail.com</p>
+              </span>
           </div>
         </div>
         <div className="w-2/3 md:w-1/3 flex flex-col justify-center items-center mb-8 md:mb-0">
@@ -35,7 +30,7 @@ const Footer = () => {
               <Link to="/store">Store</Link>
             </li>
             <li className="link">
-              <a href="#">About</a>
+              <a href="/about">About</a>
             </li>
           </ul>
         </div>
