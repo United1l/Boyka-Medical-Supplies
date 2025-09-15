@@ -5,6 +5,10 @@ import microscope from '../assets/store/microscope.webp'
 import scanner from '../assets/store/Scanner.png'
 import stethoscope from '../assets/store/Stethoscope.jpg'
 import binoculars from '../assets/store/Binoculars.png'
+import medicalTray from '../assets/store/medical-tray.jpg'
+import otoscope from '../assets/store/otoscope.jpg'
+import oxygenTank from '../assets/store/oxygen-tank.jpg'
+import surgicalTools from '../assets/store/surgical-tools.jpg'
 
 const Equipment = () => {
   // This component displays equipment products in the store
@@ -45,6 +49,30 @@ const Equipment = () => {
       alt: "Binoculars",
       prodname: "Binoculars",
       rating: 4.4
+    },
+    {
+      src: medicalTray,
+      alt: "Medical Tray",
+      prodname: "Medical Tray",
+      rating: 4.3
+    },
+    {
+      src: otoscope,
+      alt: "Otoscope",
+      prodname: "Otoscope",
+      rating: 4.5
+    },
+    {
+      src: oxygenTank,
+      alt: "Oxygen Tank",
+      prodname: "Oxygen Tank",
+      rating: 4.6
+    },
+    {
+      src: surgicalTools,
+      alt: "Surgical Tools",
+      prodname: "Surgical Tools",
+      rating: 4.7
     }
   ]  
 

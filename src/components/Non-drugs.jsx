@@ -3,6 +3,8 @@ import intravInjection from '../assets/store/intravenous-injection.jpg'
 import infusionCuff from '../assets/store/Infusion-Cuff.jpg'
 import centrifuge from '../assets/store/Centrifuge.jpg'
 import flask from '../assets/store/flask.jpg'
+import bandage from '../assets/store/bandage.jpg'
+import testTube from '../assets/store/test-tube.jpg'
 
 const NonDrugs = () => {
   // This component displays non-drug products in the store
@@ -31,6 +33,18 @@ const NonDrugs = () => {
       alt: "Flask", 
       prodname: "Flask", 
       rating: 4.2
+    },
+    {
+      src: bandage,
+      alt: "Bandage", 
+      prodname: "Bandage",
+      rating: 4.3
+    },
+    {
+      src: testTube,
+      alt: "Test Tube", 
+      prodname: "Test Tube", 
+      rating: 4.6
     }
   ]
 

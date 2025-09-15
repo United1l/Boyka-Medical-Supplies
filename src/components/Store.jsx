@@ -24,7 +24,7 @@ const Store = () => {
   }
 
   return (
-    <div className="h-screen w-screen">
+    <div className="h-screen w-screen overflow-x-hidden">
       <header className="fixed top-0 h-[5rem] w-full flex 
         items-center justify-between z-10 p-4">
         <Link to="/">
