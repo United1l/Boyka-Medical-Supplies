@@ -16,7 +16,7 @@ const renderedServices = services.map((service, index) => {
     if (index % 2 !== 0) { 
       return ( 
          <div key={index} className="w-full h-auto flex flex-wrap justify-between items-center mt-[10rem]">
-            <div className="w-full md:w-1/2 h-auto flex flex-col justify-center items-center">
+           <div className="w-full md:w-1/2 h-auto flex flex-col justify-center items-center">
                 <p className="mt-4 tracking-wide text-[#4CA771] text-2xl lg:text-3xl font-bold text-center">
                     {service.title}
                 </p>
@@ -28,7 +28,7 @@ const renderedServices = services.map((service, index) => {
         </div>
         );
     } else {
-        return ( 
+        return (
             <div key={index} className="w-full h-auto flex flex-wrap justify-between items-center mt-[10rem]">
                 <TiltedImageContainer sourceImage={service.img} />
                 <div className="w-full md:w-1/2 h-auto flex flex-col justify-center items-center">

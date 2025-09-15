@@ -7,13 +7,13 @@ import Footer from './Footer'
 
 const Home = () => {
   return (
-    <div className="h-screen w-screen overflow-x-hidden">
-        <Header />
-        <Hero />
-        <PopularProducts />
-        <Services />
-        <Customers />
-        <Footer />
+    <div className="w-screen h-screen overflow-x-hidden" style={{ scrollBehavior: 'smooth' }}>
+      <Header />
+      <Hero />
+      <PopularProducts />
+      <Services />
+      <Customers />
+      <Footer />
     </div>
   )
 }

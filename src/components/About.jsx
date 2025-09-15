@@ -10,7 +10,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
 return (
-    <div className="h-screen w-screen overflow-x-hidden">
+    <div className="h-screen w-screen overflow-x-hidden" style={{ scrollBehavior: 'smooth' }}>
         <header className="h-[5rem] w-full flex
             items-center justify-center z-10 p-4 relative">
             <Link to="/" className="absolute left-4 h-8 w-8 md:h-14 md:w-14">
@@ -21,7 +21,8 @@ return (
                 TRUSTCARE MEDICAL SUPPLY
             </h1>
         </header>
-        <section className="mt-[5rem] flex flex-col items-center">
+        
+       <section className="mt-[5rem] flex flex-col items-center">
             <p className="w-4/5 text-lg text-justify text-gray-700">
                 <b>TrustCare Medical Supply</b> is a trusted leader in the wholesale and retail of hospital equipment and 
                 pharmaceuticals. Serving hospitals, clinics, pharmacies, and healthcare providers, we deliver high-quality
@@ -30,8 +31,11 @@ return (
                 and complete compliance with industry standards. Our dedicated team works closely with clients to understand their
                 unique requirements, ensuring tailored solutions that optimize healthcare outcomes
             </p>
-            <img src={pharma7} alt="Pharmaceuticals" className="max-w-4/5 h-auto my-10 rounded-lg shadow-lg"/>
+            
+                <img src={pharma7} alt="Pharmaceuticals" className="max-w-4/5 h-auto my-10 rounded-lg shadow-lg"/>
+            
             <h2 className="text-2xl text-[#4CA771] mt-10 font-semibold">Our Vison</h2>
+            
             <p className="w-4/5 text-lg text-justify text-gray-700 my-4">
                 To be the most trusted and reliable provider of medical supplies, enhancing healthcare delivery and patient outcomes
                 across every community we serve.
@@ -53,9 +57,11 @@ return (
                     Through continuous innovation and a focus on reliability, we aim to exceed the expectations of our clients and make a
                     meaningful difference in the healthcare industry.
             </p>
+
             <img src={pharma15} alt="Medical Supplies" className="max-w-4/5 h-auto my-10 rounded-lg shadow-lg"/>
 
             <h2 className="text-2xl text-[#4CA771] mt-10 font-semibold">Core Values</h2>
+            
             <ul className="w-4/5 text-lg text-gray-700 list-disc pl-6 my-4">
                 <li>Integrity and transparency in every transaction</li>
                 <li>Commitment to quality and safety</li>
@@ -64,6 +70,7 @@ return (
                 <li>Respect for people and communities</li>
             </ul>
             <h2 className="text-2xl text-[#4CA771] mt-10 font-semibold">What we offer</h2>
+            
             <ul className="w-4/5 text-lg text-gray-700 list-disc pl-6 my-4">
                 <li>Pharmaceutical Products: A comprehensive selection of prescription and over-the-counter medications that meet 
                     regulatory standards.</li>
@@ -74,17 +81,23 @@ return (
                 <li>Quality Assurance: Every product we sell is sourced from certified suppliers and undergoes strict quality control measures.</li>
             </ul>
             <img src={pharma16} alt="Medical Products" className="max-w-4/5 h-auto my-10 rounded-lg shadow-lg"/>
+            
         </section>
+
         <section className="mt-[5rem] flex flex-col items-center">
             <h2 className="text-2xl text-[#4CA771] mt-10 font-semibold">Our Location</h2>
             <p>Okyerekrom, Ejisu, Ghana</p>
+            
             <div className="w-4/5 my-10 rounded-lg shadow-lg">
                 <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Okyerekrom,%20Ejisu,%20Ghana+(TrustCare%20Medical%20Supply)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                 <a href="https://www.mapsdirections.info/fr/calculer-la-population-sur-une-carte">mesurer la population sur une carte</a></iframe>
             </div>
+
         </section>
+
         <section className="mt-[5rem] flex flex-col items-center">
             <h2 className="text-2xl text-[#4CA771] my-10 font-semibold">Founder</h2>
+            
             <div className="flex flex-wrap items-center justify-center w-4/5 mb-10">
                 <div className="w-1/2 h-auto pr-10">
                     <h3 className="text-xl font-semibold">Boyka</h3>
@@ -101,9 +114,12 @@ return (
                     <img src={ceo} alt="ceo" className="max-w-full h-auto" />
                 </div>
             </div>
+
         </section>
+
         <section className="my-[5rem] flex flex-col items-center">
             <h2 className="text-2xl text-[#4CA771] my-5 font-semibold">Contact Information</h2>
+            
             <div className="icons w-full flex flex-wrap justify-evenly items-center mt-4">
                 <span className="flex flex-wrap items-center">
                     <FontAwesomeIcon icon={faPhone} className="text-2xl" />
