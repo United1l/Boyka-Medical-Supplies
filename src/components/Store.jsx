@@ -46,7 +46,7 @@ const Store = () => {
             ))}
           </div>
         </nav>
-        <div className={`${menuState? "flex" : "hidden"} md:hidden absolute w-full min-h-[40rem] bg-[#4CA771] top-20 p-6
+        <div className={`${menuState? "flex" : "hidden"} md:hidden absolute w-full min-h-[40rem] bg-[#4CA771] top-20 left-0 right-0 p-6
         flex-col items-center justify-evenly z-10`}>
           {
             categories.map((category, index) => (
