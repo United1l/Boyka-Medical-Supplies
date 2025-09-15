@@ -51,7 +51,10 @@ const Store = () => {
           {
             categories.map((category, index) => (
               <h3 key={index} className="cursor-pointer text-2xl"
-                onClick={() => {handleHighlight(category)}}>
+                onClick={() => {
+                    handleHighlight(category)
+                    setMenuState(false)
+                  }}>
                 {category}
               </h3>
             ))

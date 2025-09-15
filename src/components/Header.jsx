@@ -39,9 +39,9 @@ const Header = () => {
       <div className={`${menuState? "flex" : "hidden"} md:hidden absolute w-full min-h-[40rem] bg-[#4CA771] top-20 p-6
         flex-col items-center justify-evenly z-10`}>
         {links.map((link, index) => (
-          <a key={index} href={link.href}>
+          <Link key={index} to={link.href}>
             {link.label}
-          </a>
+          </Link>
         ))}
       </div>
     </header>
