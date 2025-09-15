@@ -95,11 +95,11 @@ return (
 
         </section>
 
-        <section className="mt-[5rem] flex flex-col items-center">
+        <section className="mt-[5rem] flex flex-col items-center justify-center">
             <h2 className="text-2xl text-[#4CA771] my-10 font-semibold">Founder</h2>
             
-            <div className="flex flex-wrap items-center justify-center w-4/5 mb-10">
-                <div className="w-1/2 h-auto pr-10">
+            <div className="md:flex flex-wrap items-center justify-center w-4/5 mb-10">
+                <div className="w-full md:w-1/2 flex flex-col items-center h-auto md:pr-10">
                     <h3 className="text-xl font-semibold">Boyka</h3>
                     <p className="w-4/5 text-lg text-justify text-gray-700 my-4">
                         Boyka is a seasoned medical professional with over a decade of experience in healthcare.
@@ -110,8 +110,8 @@ return (
                         ensuring that TrustCare Medical Supply meets the evolving needs of the healthcare community.
                     </p>
                 </div>
-                <div className="w-1/2 h-auto">
-                    <img src={ceo} alt="ceo" className="max-w-full h-auto" />
+                <div className="w-full md:w-1/2 h-auto">
+                    <img src={ceo} alt="ceo" className="max-w-full h-full" />
                 </div>
             </div>
 
