@@ -100,18 +100,19 @@ return (
             
             <div className="md:flex flex-wrap items-center justify-center w-4/5 mb-10">
                 <div className="w-full md:w-1/2 flex flex-col items-center h-auto md:pr-10">
-                    <h3 className="text-xl font-semibold">Boyka</h3>
+                    <h3 className="text-xl font-semibold">Nana Osei Tutu Prince</h3>
                     <p className="w-4/5 text-lg text-justify text-gray-700 my-4">
-                        Boyka is a seasoned medical professional with over a decade of experience in healthcare.
+                        Nana Osei is a seasoned medical professional with over a decade of experience in healthcare.
                         Holding an MD from the University of Ghana, he has worked in various clinical settings, gaining extensive
                         knowledge in patient care and medical management. His passion for improving healthcare delivery led him to
                         establish TrustCare Medical Supply, aiming to provide high-quality medical products and services to healthcare
-                        providers.Boyka is committed to ethical practices, innovation, and excellence in the medical supply industry,
+                        providers.Nana Osei is committed to ethical practices, innovation, and excellence in the medical supply industry,
                         ensuring that TrustCare Medical Supply meets the evolving needs of the healthcare community.
                     </p>
                 </div>
-                <div className="w-full md:w-1/2 h-auto">
-                    <img src={ceo} alt="ceo" className="max-w-full h-full" />
+                <div className="w-full h-1/3 md:w-1/2
+                ">
+                    <img src={ceo} alt="ceo" className="max-w-full h-full rounded-xl shadow-lg" />
                 </div>
             </div>
 
