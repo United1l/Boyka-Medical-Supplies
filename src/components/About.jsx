@@ -110,7 +110,7 @@ return (
                         ensuring that TrustCare Medical Supply meets the evolving needs of the healthcare community.
                     </p>
                 </div>
-                <div className="w-full h-1/3 md:w-1/2
+                <div className="w-full h-1/4 md:w-1/2
                 ">
                     <img src={ceo} alt="ceo" className="max-w-full h-full rounded-xl shadow-lg" />
                 </div>
