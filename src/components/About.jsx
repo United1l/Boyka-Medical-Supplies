@@ -103,9 +103,9 @@ return (
                     <h3 className="text-xl font-semibold">Nana Osei Tutu Prince</h3>
                     <p className="w-4/5 text-lg text-justify text-gray-700 my-4">
                         Nana Osei is a seasoned medical supplier with over a decade of experience in healthcare.
-                        His passion for improving healthcare delivery led him to
-                        establish TrustCare Medical Supply, aiming to provide high-quality medical products and services to healthcare
-                        providers.Nana Osei is committed to ethical practices, innovation, and excellence in the medical supply industry,
+                        His passion for improving healthcare delivery led him to establish TrustCare Medical Supply,
+                        aiming to provide high-quality medical products and services to healthcare providers.
+                        Nana Osei is committed to ethical practices, innovation, and excellence in the medical supply industry,
                         ensuring that TrustCare Medical Supply meets the evolving needs of the healthcare community.
                     </p>
                 </div>
