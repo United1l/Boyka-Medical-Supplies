@@ -4,7 +4,7 @@ import pharma7 from '../assets/about/pharma7.jpg'
 import pharma3 from '../assets/about/pharma3.jpg'
 import pharma15 from '../assets/about/pharma15.jpg'
 import pharma16 from '../assets/about/pharma16.jpg'
-import ceo from '../assets/about/ceo.jpeg'
+import ceo from '../assets/about/ceo2.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
@@ -109,9 +109,8 @@ return (
                         ensuring that TrustCare Medical Supply meets the evolving needs of the healthcare community.
                     </p>
                 </div>
-                <div className="w-full h-1/4 md:w-1/2
-                ">
-                    <img src={ceo} alt="ceo" className="max-w-full h-full rounded-xl shadow-lg" />
+                <div className="w-full h-1/4 md:w-1/2 flex items-center justify-center mt-10 md:mt-0">
+                    <img src={ceo} alt="ceo" className="max-w-full h-auto rounded-xl shadow-lg" />
                 </div>
             </div>
 

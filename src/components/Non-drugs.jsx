@@ -5,6 +5,12 @@ import centrifuge from '../assets/store/Centrifuge.jpg'
 import flask from '../assets/store/flask.jpg'
 import bandage from '../assets/store/bandage.jpg'
 import testTube from '../assets/store/test-tube.jpg'
+import electrode from '../assets/store/electrode.jpeg'
+import ultrasoundGel from '../assets/store/ultrasound-gel.jpeg'
+import surgicalGloves from '../assets/store/gloves.jpeg'
+import syringes from '../assets/store/syringe.jpeg'
+import gauzeRoll from '../assets/store/gauze-roll.jpeg'
+import skinPlaster from '../assets/store/skin-plaster.jpeg'
 
 const NonDrugs = () => {
   // This component displays non-drug products in the store
@@ -45,11 +51,47 @@ const NonDrugs = () => {
       alt: "Test Tube", 
       prodname: "Test Tube", 
       rating: 4.6
-    }
+    },
+    {
+      src: electrode,
+      alt: "Electrode", 
+      prodname: "Electrode", 
+      rating: 4.4
+    },
+    {
+      src: ultrasoundGel,
+      alt: "Ultrasound Gel", 
+      prodname: "Ultrasound Gel", 
+      rating: 4.7
+    },
+    {
+      src: surgicalGloves,
+      alt: "Surgical Gloves", 
+      prodname: "Surgical Gloves", 
+      rating: 4.9
+    },
+    {
+      src: syringes,
+      alt: "Syringes", 
+      prodname: "Syringes", 
+      rating: 4.5
+    },
+    {
+      src: gauzeRoll,
+      alt: "Gauze Roll", 
+      prodname: "Gauze Roll", 
+      rating: 4.3
+    },
+    {
+      src: skinPlaster,
+      alt: "Skin Plaster", 
+      prodname: "Skin Plaster", 
+      rating: 4.6
+    },
   ]
 
   return (
-    <div className="w-full h-auto flex justify-evenly p-10 flex-wrap">
+    <div className="w-full h-auto flex justify-center space-x-24 p-10 flex-wrap">
       {products.map((product, index) => (
         <ProductCard
           key={index}
