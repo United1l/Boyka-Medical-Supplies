@@ -118,7 +118,7 @@ const Equipment = () => {
     {
       src: electronicSphygmomanometer,
       alt: "Electronic Sphygmomanometer",
-      prodname: "Sphygmomanometer",
+      prodname: "Electronic Sphygmomanometer",
       rating: 4.5
     },
     {

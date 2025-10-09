@@ -25,7 +25,7 @@ const Store = () => {
 
   return (
     <div className="h-screen w-screen overflow-x-hidden">
-      <header className="fixed top-0 h-[5rem] w-full flex 
+      <header className="sticky top-0 h-[5rem] w-full flex 
         items-center justify-between z-10 p-4">
         <Link to="/">
           <img src={logo} width={55} height={55} alt="TrustCare MS logo" className="ml-2 cursor-pointer" />
